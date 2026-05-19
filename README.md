@@ -1,9 +1,9 @@
-# WaveMAE
+# FVM
 
 ![image](https://github.com/Fuuu12/FVM/blob/main/overallnet.png)
 
 ## Introduction
-This repo contains how wavemae models work for video action recognition.
+This repo contains how FVM models work for video action recognition.
 
 
 ## Installation
