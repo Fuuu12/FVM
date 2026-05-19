@@ -1,22 +1,12 @@
-# pytorch-video-recognition
+# WaveMAE
 
-<table style="border:0px">
-   <tr>
-       <td><img src="assets/demo1.gif" frame=void rules=none></td>
-       <td><img src="assets/demo2.gif" frame=void rules=none></td>
-   </tr>
-</table>
 
 ## Introduction
-This repo contains several models for video action recognition,
-including C3D, R2Plus1D, R3D, inplemented using PyTorch (0.4.0).
-Currently, we train these models on UCF101 and HMDB51 datasets.
-**More models and datasets will be available soon!**
+This repo contains how wavemae models work for video action recognition.
 
-**Note: An interesting online web game based on C3D model is in [here](https://github.com/jfzhang95/project-demo).**
 
 ## Installation
-The code was tested with Anaconda and Python 3.5. After installing the Anaconda environment:
+The code was tested with Anaconda and Python 3.8. After installing the Anaconda environment:
 
 0. Clone the repo:
     ```Shell
@@ -34,9 +24,7 @@ The code was tested with Anaconda and Python 3.5. After installing the Anaconda 
     pip install tqdm scikit-learn tensorboardX
     ```
 
-2. Download pretrained model from [BaiduYun](https://pan.baidu.com/s/1saNqGBkzZHwZpG-A5RDLVw) or 
-[GoogleDrive](https://drive.google.com/file/d/19NWziHWh1LgCcHU34geoKwYezAogv9fX/view?usp=sharing).
-   Currently only support pretrained model for C3D.
+2. Download pretrained model from [BaiduYun](https://pan.baidu.com/s/1CA2GIViYik3QSAkTJEqzTg?pwd=m3i3).
 
 3. Configure your dataset and pretrained model path in
 [mypath.py](https://github.com/jfzhang95/pytorch-video-recognition/blob/master/mypath.py).
@@ -50,8 +38,6 @@ The code was tested with Anaconda and Python 3.5. After installing the Anaconda 
     ```
 
 ## Datasets:
-
-I used two different datasets: UCF101 and HMDB.
 
 Dataset directory tree is shown below
 
@@ -92,19 +78,12 @@ After pre-processing, the output dir's structure is as follows:
 Note: HMDB dataset's directory tree is similar to UCF101 dataset's.
 
 ## Experiments
-These models were trained in machine with NVIDIA TITAN X 12gb GPU. Note that I splited
+These models were trained in machine with NVIDIA 3090 24gb GPU. Note that I splited
 train/val/test data for each dataset using sklearn. If you want to train models using
-official train/val/test data, you can look in [dataset.py](https://github.com/jfzhang95/pytorch-video-recognition/blob/master/dataloaders/dataset.py), and modify it to your needs.
+official train/val/test data, you can look in [dataset.py](), and modify it to your needs.
 
 Currently, I only train C3D model in UCF and HMDB datasets. The train/val/test
 accuracy and loss curves for each experiment are shown below:
 
-- **UCF101**
 
-<p align="center"><img src="assets/ucf101_results.png" align="center" width=900 height=auto/></p>
-
-- **HMDB51**
-
-<p align="center"><img src="assets/hmdb51_results.png" align="center" width=900 height=auto/></p>
-
-Experiments for other models will be updated soon ...
+Experiments for other checkpoints will be updated soon ...
