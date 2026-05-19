@@ -221,7 +221,7 @@ class VisionMamba(nn.Module):
         return x
 ```
 
-You can get the pretrained model from [BaiduNetDisk]() 
+You can get the pretrained model from [BaiduNetDisk](https://pan.baidu.com/s/1MfSyWvn4EjBqTHSMn_RFiA?pwd=rb7z)  Extraction code：rb7z
 
 ## Contents
 
